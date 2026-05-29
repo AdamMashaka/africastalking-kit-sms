@@ -2,28 +2,28 @@
 .env
 *.env
 
-#IGNORE THIS
-afri-auth/
-├── pyproject.toml
-├── README.md
-├── .env.example
-├── requirements.txt
-├── afri_auth/
-│   ├── __init__.py
-│   ├── config.py
-│   ├── otp.py
-│   ├── security.py
-│   ├── storage.py
-│   ├── cli.py
-│   ├── providers/
-│   │   ├── __init__.py
-│   │   └── africastalking.py
-│   ├── fastapi/
-│   │   ├── __init__.py
-│   │   └── router.py
-│   └── templates/
-│       └── fastapi_app.py
-└── starter_project/
-    ├── main.py
-    ├── .env
-    └── requirements.txt
+# #IGNORE THIS
+# afri-auth/
+# ├── pyproject.toml
+# ├── README.md
+# ├── .env.example
+# ├── requirements.txt
+# ├── afri_auth/
+# │   ├── __init__.py
+# │   ├── config.py
+# │   ├── otp.py
+# │   ├── security.py
+# │   ├── storage.py
+# │   ├── cli.py
+# │   ├── providers/
+# │   │   ├── __init__.py
+# │   │   └── africastalking.py
+# │   ├── fastapi/
+# │   │   ├── __init__.py
+# │   │   └── router.py
+# │   └── templates/
+# │       └── fastapi_app.py
+# └── starter_project/
+#     ├── main.py
+#     ├── .env
+#     └── requirements.txt
