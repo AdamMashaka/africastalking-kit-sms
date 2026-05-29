@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "afri-auth-sms"
-version = "0.1.1"
+version = "0.1.2"
 description = "Plug and play OTP authentication for African telecom providers"
 readme = "README.MD"
 requires-python = ">=3.10"

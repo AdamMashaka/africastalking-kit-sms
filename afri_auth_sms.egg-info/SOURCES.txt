@@ -1,3 +1,4 @@
+README.MD
 README.md
 pyproject.toml
 afri_auth/__init__.py

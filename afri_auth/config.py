@@ -1,7 +1,8 @@
 import os
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 
-load_dotenv()
+# Automatically find .env file anywhere above current directory
+load_dotenv(find_dotenv())
 
 AFRICASTALKING_USERNAME = os.getenv("AFRICASTALKING_USERNAME")
 AFRICASTALKING_API_KEY = os.getenv("AFRICASTALKING_API_KEY")

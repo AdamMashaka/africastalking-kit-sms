@@ -6,31 +6,44 @@ from afri_auth.config import (
 )
 
 
-def get_sms_client():
+def get_sms_client(username=None, api_key=None):
 
-    if not AFRICASTALKING_USERNAME:
+    username = username or AFRICASTALKING_USERNAME
+    api_key = api_key or AFRICASTALKING_API_KEY
+
+    if not username:
         raise ValueError(
             "AFRICASTALKING_USERNAME is missing"
         )
 
-    if not AFRICASTALKING_API_KEY:
+    if not api_key:
         raise ValueError(
             "AFRICASTALKING_API_KEY is missing"
         )
 
     africastalking.initialize(
-        AFRICASTALKING_USERNAME,
-        AFRICASTALKING_API_KEY
+        username,
+        api_key
     )
 
     return africastalking.SMS
 
 
-async def send_sms(phone, message):
+async def send_sms(
+    phone: str,
+    message: str,
+    username=None,
+    api_key=None
+):
 
-    sms = get_sms_client()
+    sms = get_sms_client(
+        username=username,
+        api_key=api_key
+    )
 
-    return sms.send(
+    response = sms.send(
         message,
         [phone]
     )
+
+    return response
