@@ -8,6 +8,9 @@ afri_auth.egg-info/
 /afri_auth.egg-info/
 README.md
 LICENSE
+otp-demo
+otp-demo/
+otp-demo/*
 
 # #IGNORE THIS
 # afri-auth/

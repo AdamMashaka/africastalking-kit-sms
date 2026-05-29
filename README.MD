@@ -181,6 +181,15 @@ auth = AfriAuth(
     redis_url="redis://localhost:6379"
 )
 ```
+
+# Redis for ubuntu
+```
+sudo apt install redis-server
+
+sudo systemctl start redis
+
+```
+
 *immediately you will get*
 ```
 POST /auth/send-otp
