@@ -147,6 +147,29 @@ app.include_router(
 )
 ```
 
+# Boom user will get 
+
+```
+POST /auth/send-otp
+
+POST /auth/verify-otp
+
+OTP generation
+
+OTP expiry
+
+Redis storage
+
+SMS sending
+
+Rate limiting
+
+Retry protection
+
+Africa's Talking integration
+
+```
+
 ---
 
 # ⚙️ Redis Configuration
