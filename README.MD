@@ -358,6 +358,3 @@ Plug and play OTP authentication package for African telecom providers.
 pip install afri-auth-sms
 
 ```
-# Project structure 
-
-tree -L 3
