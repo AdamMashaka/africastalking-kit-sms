@@ -2,6 +2,7 @@
 .env
 *.env
 
+#IGNORE THIS
 afri-auth/
 ├── pyproject.toml
 ├── README.md
