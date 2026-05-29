@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "afri-auth"
+version = "0.1.0"
+description = "Plug and play OTP authentication for African telecom providers"
+authors = [a]
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "redis",
+    "africastalking",
+    "python-dotenv",
+    "typer"
+]
+
+[project.scripts]
+afri-auth = "afri_auth.cli:app"

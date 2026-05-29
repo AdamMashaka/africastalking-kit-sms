@@ -1,0 +1,2 @@
+[console_scripts]
+afri-auth = afri_auth.cli:app

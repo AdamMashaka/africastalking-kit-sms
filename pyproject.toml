@@ -6,9 +6,11 @@ build-backend = "setuptools.build_meta"
 name = "afri-auth"
 version = "0.1.0"
 description = "Plug and play OTP authentication for African telecom providers"
+
 authors = [
-    { name="Adam Mashaka Katani" }
+    {name = "AdamKatani"}
 ]
+
 dependencies = [
     "fastapi",
     "uvicorn",
@@ -20,3 +22,6 @@ dependencies = [
 
 [project.scripts]
 afri-auth = "afri_auth.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["afri_auth*"]

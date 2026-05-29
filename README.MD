@@ -328,3 +328,8 @@ Plug and play OTP authentication package for African telecom providers.
 
 ```bash
 pip install afri-auth
+
+```
+# Project structure 
+
+tree -L 3
