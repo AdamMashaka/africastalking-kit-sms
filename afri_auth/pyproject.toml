@@ -6,7 +6,9 @@ build-backend = "setuptools.build_meta"
 name = "afri-auth-sms"
 version = "0.1.0"
 description = "Plug and play OTP authentication for African telecom providers"
-readme = README.md
+readme = "README.md"
+requires-python = ">=3.10"
+
 authors = [
     {name = "AdamKatani"}
 ]
@@ -19,6 +21,10 @@ dependencies = [
     "python-dotenv",
     "typer"
 ]
+
+[project.urls]
+Homepage = "https://github.com/AdamMashaka/africastalking-kit-sms"
+Repository = "https://github.com/AdamMashaka/africastalking-kit-sms"
 
 [project.scripts]
 afri-auth-sms = "afri_auth.cli:app"
