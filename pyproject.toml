@@ -21,7 +21,7 @@ dependencies = [
 ]
 
 [project.scripts]
-afri-auth = "afri_auth.cli:app"
+afri-auth-sms = "afri_auth.cli:app"
 
 [tool.setuptools.packages.find]
 include = ["afri_auth*"]

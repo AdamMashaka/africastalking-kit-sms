@@ -1,2 +1,2 @@
 [console_scripts]
-afri-auth = afri_auth.cli:app
+afri-auth-sms = afri_auth.cli:app
