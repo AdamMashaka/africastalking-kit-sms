@@ -74,10 +74,10 @@ Optimized for African telecom infrastructure.
 
 Future support planned for:
 
-* Twilio
+<!-- * Twilio
 * Infobip
 * Hubtel
-* Termii
+* Termii -->
 * WhatsApp OTP
 
 ---
@@ -85,7 +85,7 @@ Future support planned for:
 # 📦 Installation
 
 ```bash id="69kbbi"
-pip install afriauth
+pip install afri-auth-sms
 ```
 
 ---
@@ -95,11 +95,18 @@ pip install afriauth
 ## 1. Initialize Afriauth
 
 ```python id="p4n0dd"
-from afriauth import AfriAuth
+from afri_auth import OTPAuth
 
-auth = AfriAuth(
+otp = OTPAuth(
     username="sandbox",
-    api_key="YOUR_AFRICASTALKING_API_KEY"
+    api_key="xxxx"
+)
+
+await otp.send_otp("+255694021848")
+
+result = await otp.verify_otp(
+    "+255694021848",
+    "123456"
 )
 ```
 
@@ -108,7 +115,7 @@ auth = AfriAuth(
 # 📲 Send OTP
 
 ```python id="7s4i1q"
-await auth.send_otp("+255712345678")
+await auth.send_otp("+255694021848")
 ```
 
 ---
@@ -117,7 +124,7 @@ await auth.send_otp("+255712345678")
 
 ```python id="6m8p3d"
 is_valid = await auth.verify_otp(
-    phone="+255712345678",
+    phone="+255694021848",
     code="123456"
 )
 
@@ -130,33 +137,14 @@ print(is_valid)
 
 ```python id="fvs1d1"
 from fastapi import FastAPI
-from afriauth import AfriAuth
+from afri_auth.fastapi import OTPRouter
 
 app = FastAPI()
 
-auth = AfriAuth(
-    username="sandbox",
-    api_key="YOUR_API_KEY"
+app.include_router(
+    OTPRouter,
+    prefix="/auth"
 )
-
-
-@app.post("/send-otp")
-async def send_otp(phone: str):
-    await auth.send_otp(phone)
-
-    return {
-        "success": True,
-        "message": "OTP sent successfully"
-    }
-
-
-@app.post("/verify-otp")
-async def verify_otp(phone: str, code: str):
-    verified = await auth.verify_otp(phone, code)
-
-    return {
-        "verified": verified
-    }
 ```
 
 ---
@@ -170,6 +158,14 @@ auth = AfriAuth(
     redis_url="redis://localhost:6379"
 )
 ```
+*immediately you will get*
+```
+POST /auth/send-otp
+
+POST /auth/verify-otp
+
+```
+No coding required for sending and verification
 
 ---
 
