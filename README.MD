@@ -318,6 +318,8 @@ Fast.
 Secure.
 Built for Africa.
 
+## NEW SAMPLE
+
 # Afri Auth
 
 Plug and play OTP authentication package for African telecom providers.
