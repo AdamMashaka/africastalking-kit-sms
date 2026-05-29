@@ -317,3 +317,12 @@ Simple.
 Fast.
 Secure.
 Built for Africa.
+
+# Afri Auth
+
+Plug and play OTP authentication package for African telecom providers.
+
+## Installation
+
+```bash
+pip install afri-auth
