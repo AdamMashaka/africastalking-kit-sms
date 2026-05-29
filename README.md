@@ -347,3 +347,16 @@ rm -rf *.egg-info
 *3: python -m build*
 
 *4: twine upload dist/**
+
+# Future 
+```
+afri-auth-sms
+│
+├── SMS OTP
+├── WhatsApp OTP
+├── Email OTP
+├── USSD Authentication
+├── Transaction PIN
+├── Mobile Money Verification
+└── Identity Verification
+```
