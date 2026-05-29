@@ -6,6 +6,8 @@ dist/
 build/ 
 afri_auth.egg-info/
 /afri_auth.egg-info/
+README.md
+LICENSE
 
 # #IGNORE THIS
 # afri-auth/
