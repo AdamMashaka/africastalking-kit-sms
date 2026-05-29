@@ -3,9 +3,26 @@ Name: afri-auth-sms
 Version: 0.1.0
 Summary: Plug and play OTP authentication for African telecom providers
 Author: AdamKatani
+License: MIT
+Project-URL: Homepage, https://github.com/AdamMashaka/africastalking-kit-sms
+Project-URL: Repository, https://github.com/AdamMashaka/africastalking-kit-sms
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
 Requires-Dist: fastapi
 Requires-Dist: uvicorn
 Requires-Dist: redis
 Requires-Dist: africastalking
 Requires-Dist: python-dotenv
 Requires-Dist: typer
+
+# Afri Auth SMS
+
+Plug-and-play SMS OTP authentication package for FastAPI and Africa's Talking.
+
+## Installation
+
+pip install afri-auth-sms
+
+## Usage
+
+from afri_auth import OTPAuth
