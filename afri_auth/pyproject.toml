@@ -1,12 +1,16 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "afri-auth"
+name = "afri-auth-sms"
 version = "0.1.0"
 description = "Plug and play OTP authentication for African telecom providers"
-authors = [a]
+readme = README.md
+authors = [
+    {name = "AdamKatani"}
+]
+
 dependencies = [
     "fastapi",
     "uvicorn",
@@ -17,4 +21,7 @@ dependencies = [
 ]
 
 [project.scripts]
-afri-auth = "afri_auth.cli:app"
+afri-auth-sms = "afri_auth.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["afri_auth*"]

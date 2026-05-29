@@ -4,6 +4,8 @@
 dist/
 *dist/
 build/ 
+afri_auth.egg-info/
+/afri_auth.egg-info/
 
 # #IGNORE THIS
 # afri-auth/
