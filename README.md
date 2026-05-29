@@ -333,3 +333,17 @@ pip install afri-auth-sms
 # Project structure 
 
 tree -L 3
+
+# UPDATE PIP 
+*1: increase a version in a .toml*
+
+*2: Remove current one*
+
+```
+rm -rf build
+rm -rf dist
+rm -rf *.egg-info
+```
+*3: python -m build*
+
+*4: twine upload dist/**
