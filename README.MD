@@ -327,7 +327,7 @@ Plug and play OTP authentication package for African telecom providers.
 ## Installation
 
 ```bash
-pip install afri-auth
+pip install afri-auth-sms
 
 ```
 # Project structure 
