@@ -1,6 +1,9 @@
 .venv
 .env
 *.env
+dist/
+*dist/
+build/ 
 
 # #IGNORE THIS
 # afri-auth/
